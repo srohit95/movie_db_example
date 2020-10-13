@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".Detailaview">
+
+    <ScrollView
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            app:autoSizeTextType="uniform"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="2"
+            android:id="@+id/title"
+            android:text="avengers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal|clip_horizontal"
+            android:layout_width="wrap_content"
+            android:id="@+id/image"
+            android:layout_height="200dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:text="Popularity :"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/popular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:text="Certificate :"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/adult"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#fff"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:text="Total Vote :"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/totalvote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:text="Vote Avg. :"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/voteavg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#fff"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:text="Release Date :"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/releasedate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#fff"/>
+
+            <TextView
+
+                android:textStyle="bold"
+                android:text="Language :"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/language"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#fff"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="Overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="#000"   />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="#000"   />
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

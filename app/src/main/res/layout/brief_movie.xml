@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:backgroundTint="#000"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/border"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            app:autoSizeTextType="uniform"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="2"
+            android:id="@+id/title"
+            android:text="avengers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:id="@+id/image"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="2"
+                android:weightSum="4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"
+                        android:text="Popularity:"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#fff"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/popular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#fff"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"
+                        android:text="Release On"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#fff"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#fff"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"
+                        android:text="Vote:"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#fff"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/vote"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#fff"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"
+                        android:text="Vote Avg. :"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#fff"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/voteavg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#fff"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

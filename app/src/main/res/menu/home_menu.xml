@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/voteasc"
+        android:title="Sort by Vote (Asc)" />
+    <item android:id="@+id/votedsc"
+        android:title="Sort by Vote (Des)" />
+    <item android:id="@+id/popularasc"
+        android:title="Sort by popularity(Asc)" />
+    <item android:id="@+id/populardes"
+        android:title="Sort by popularity(Des)" />
+    <item android:id="@+id/voteavgasc"
+        android:title="Sort by Vote avg.(Asc)" />
+    <item android:id="@+id/voteavgdes"
+        android:title="Sort by Vote avg.(Des)" />
+    <item android:id="@+id/dateasc"
+        android:title="Sort by Date(Asc)" />
+    <item android:id="@+id/datedes"
+        android:title="Sort by Date(Des)" />
+    <item android:id="@+id/titleasc"
+        android:title="Sort by Title(Asc)" />
+    <item android:id="@+id/titledes"
+        android:title="Sort by Title(Des)" />
+    <item android:id="@+id/offline"
+        android:title="Offline" />
+    <item android:id="@+id/refresh"
+        android:title="Refresh" />
+</menu>
