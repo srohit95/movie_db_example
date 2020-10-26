@@ -128,7 +128,7 @@ int page=1,max=0;
     HttpURLConnection httpURLConnection;
     BufferedReader br;
     StringBuilder sb;
-    String s1 = "";
+    String s1 = "",key="";
     class Async_call extends AsyncTask<Void, Void, String> {
 
         @Override
@@ -147,7 +147,7 @@ int page=1,max=0;
             try {
                 if (internet_status.internet_status()) {
 
-                    String out_URL = "https://api.themoviedb.org/3/movie/top_rated?api_key=c9bd45bcf91faddc841e569e642e41d5&language=en-US&page="+page;
+                    String out_URL = "https://api.themoviedb.org/3/movie/top_rated?api_key="+key+"&language=en-US&page="+page;
                     url = new URL(out_URL);//send the data for the url
                     httpURLConnection = (HttpURLConnection) url.openConnection();
                     httpURLConnection.setRequestMethod("GET");
